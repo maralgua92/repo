@@ -1,0 +1,38 @@
+<%- include('../admin-layout/header.ejs'); %>
+<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+    <h2>Create User</h2>
+    <form action="/submit" method="POST" enctype="multipart/form-data">
+<div class="mb-3">
+    <label class="form-label">Username</label>
+    <input 
+    type="text" 
+    name="username"
+    class="form-control" 
+    aria-describedby="emailHelp"/>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Email address</address></label>
+    <input 
+    type="email" 
+    name="email"
+    class="form-control"
+    aria-describedby="emailHelp" />
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Password</label>
+    <input 
+    type="password" 
+    name="password"
+    class="form-control">
+  </div> 
+  <div class="mb-3">
+    <label class="form-label">Profile Photo</label>
+    <input 
+    type="file" 
+    name="profilePhoto"
+    class="form-control">
+  </div> 
+  <input type="submit" class="btn btn-primary"></input>
+</form>
+</main>
+<%- include('../admin-layout/footer.ejs'); %> 
